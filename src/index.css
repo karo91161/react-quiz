@@ -1,11 +1,12 @@
 :root {
-  --color-darkest: #343a40;
-  --color-dark: #495057;
-  --color-medium: #ced4da;
-  --color-light: #f1f3f5;
+  --color-darkest: #1e1e2f;
+  --color-dark: #2b2c3b;
+  --color-medium: #d6d6e7;
+  --color-light: #f4f4fb;
 
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
+  --color-theme: #7f5af0;
+  --color-theme-light: #a084dc;
+  --color-accent: #f25f4c;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
@@ -53,7 +54,7 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 2rem;
-  background-color: #495057;
+  background-color: var(--color-theme-light);
   border-radius: 100px;
 }
 
@@ -121,11 +122,12 @@ progress {
   color: inherit;
   font-size: 2rem;
   border: 2px solid var(--color-dark);
-  background-color: var(--color-dark);
+  background-color: var(--color-theme-light);
   padding: 1.2rem 2.4rem;
   cursor: pointer;
   border-radius: 100px;
   transition: 0.3s;
+  color: var(--color-light);
 }
 
 .btn:not([disabled]):hover {
